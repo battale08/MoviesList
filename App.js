@@ -1,10 +1,14 @@
-//import liraries
 import React from 'react';
-import MoviesScreen from './Component /MoviesList';
+import {NavigationContainer} from '@react-navigation/native';
+import MyTabs from './BottomNavigator';
 
 // create a component
 const App = () => {
-  return <MoviesScreen />;
+  return (
+    <NavigationContainer>
+      <MyTabs />
+    </NavigationContainer>
+  );
 };
 
 export default App;
